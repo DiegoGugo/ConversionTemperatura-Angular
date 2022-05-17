@@ -13,7 +13,7 @@ import { OperacionesComponent } from './operaciones/operaciones.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
     FormsModule
   ],
   providers: [],

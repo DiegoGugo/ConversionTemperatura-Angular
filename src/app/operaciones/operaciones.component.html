@@ -2,4 +2,27 @@
     <h1 class="text-center">
         {{titulo}}
     </h1>
+    <form>
+        <div class ="form-group">
+            <label>
+                N&uacute;mero:
+            </label>
+            <input type="number" class="form-control"
+            placeholder="número"
+            name="numero"
+            [(ngModel)]="numero" />
+        </div>
+        <div class="mb-3"></div>
+        <button type="submit" class="btn btn-outline btn-primary"
+        (click)="farenheit()"
+        >
+            Grados Farenheit
+        </button>
+    </form>
+    <div class="mb-3">
+        <p>
+            El resultado es: {{resultadosFarenheit}}
+        </p>
+
+    </div>
 </div>
