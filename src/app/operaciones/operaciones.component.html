@@ -5,24 +5,27 @@
     <form>
         <div class ="form-group">
             <label>
-                N&uacute;mero:
+                Número:
             </label>
             <input type="number" class="form-control"
-            placeholder="número"
+            placeholder="ingresa un número"
             name="numero"
-            [(ngModel)]="numero" />
+            [(ngModel)]="numero" (input)="calcular()"/>
         </div>
         <div class="mb-3"></div>
         <button type="submit" class="btn btn-outline btn-primary"
-        (click)="farenheit()"
+        style="margin-right: 2rem;"
+        ((click))="calcular()"
         >
-            Grados Farenheit
+            Calcular conversiones
         </button>
     </form>
-    <div class="mb-3">
+    <div class="mt-3">
         <p>
-            El resultado es: {{resultadosFarenheit}}
+            El resultado en grados Fahrenheit es: {{resultadosFarenheit}}
         </p>
-
+        <p>
+            El resultado en grados Kelvin es :{{resultadosKelvin}}
+        </p>
     </div>
 </div>
